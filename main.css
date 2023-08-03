@@ -17,7 +17,8 @@
     --white: #FFF;
     --black: #333;
     --gray: #828282;
-    --part-black:#000;
+    --part-black: #000;
+    --part-gray: #EFEFEF;
     --container-width: 1110px;
     --container-space: 15px;
 }
@@ -28,11 +29,15 @@ body {
 }
 
 .white {
-    color:var(--white);
+    color: var(--white);
 }
 
 .part-bold {
     color: var(--part-black);
+}
+
+.gray {
+    color: var(--gray);
 }
 
 
@@ -53,15 +58,27 @@ body {
     font-size: var(--fs-h6);
 }
 
+.lg {
+    font-size: var(--fs-lg);
+}
+
 /* Flex */
 
 .flex {
     display: flex;
+}
+
+.flex_wrap {
     flex-wrap: wrap;
+
 }
 
 .flex_dir {
     flex-direction: column;
+}
+
+.flex_row {
+    flex-direction: row;
 }
 
 .justify_between {
@@ -81,10 +98,14 @@ body {
     flex-grow: 1;
 }
 
+.aligh_center {
+    align-items: center;
+}
+
 /* Flex */
 
 .container {
-    max-width: calc(var(--container-width) + var(--container-space) * 2) ;
+    max-width: calc(var(--container-width) + var(--container-space) * 2);
     padding: 0 var(--container-space);
     width: 100%;
     margin: 0 auto;
@@ -100,7 +121,7 @@ body {
 }
 
 .nav_header {
-    padding:17px 0 16px;
+    padding: 17px 0 16px;
 }
 
 /* text styles */
@@ -117,6 +138,10 @@ body {
     color: var(--black);
 }
 
+.txt_center {
+    text-align: center;
+}
+
 .header_links {
     gap: 30px;
 }
@@ -129,13 +154,14 @@ body {
     letter-spacing: 3.6px;
 }
 
+.txt-400 {
+    font-weight: 400;
+}
+
 .txt-500 {
     font-weight: 500;
 }
 
-.txt-400 {
-    font-weight: 400;
-}
 
 .txt-700 {
     font-weight: 700;
@@ -145,6 +171,18 @@ body {
     color: var(--part-black);
 }
 
+/* input */
+
+.input {
+    border-radius: 30px;
+    width: 225px;
+    height: 35px;
+    padding-left: 25px;
+    border-color: #FFF;
+    background-color: white;
+}
+
+/* logo */
 .logo-wrap {
     display: flex;
     align-items: center;
@@ -174,11 +212,11 @@ body {
 }
 
 hr {
-    margin-top:40px;
+    margin-top: 40px;
     border: 0;
     width: 100%;
     color: #EFEFEF;
-    background: #EFEFEF;    
+    background: #EFEFEF;
     height: 1px;
 }
 
@@ -215,4 +253,139 @@ hr {
     border-radius: 40px;
     border: 3px solid var(--white);
     height: 40px;
+}
+
+/* Cards */
+
+.section_offers {
+    padding: 80px 0 80px;
+    background-color: var(--part-gray);
+}
+
+.cards_img {
+    max-width: 125px;
+}
+
+.items_offers {
+    max-width: 255px;
+    min-height: 363px;
+    background-color: var(--white);
+}
+
+.offers_cards {
+    padding: 38px 0 100px 0;
+}
+
+.gap_cards {
+    gap: 20px;
+}
+
+.btn_cards {
+    background-color: var(--red-400);
+    border-radius: 30px;
+    border: 3px solid var(--red-400);
+    width: 130px;
+    height: 35px;
+    margin-left: 27px;
+}
+
+/* two_cards */
+
+.card-content {
+    min-height: 212px;
+    background-color: var(--red-400);
+    width: 100%;
+
+}
+
+.images_cards {
+    align-items: end;
+    padding-right: 45px;
+}
+
+.card_space {
+    padding-bottom: 100px;
+}
+
+.card_width {
+    min-width: 540px;
+}
+
+.column_interect {
+    padding: 35px 0 35px 40px;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.txt_cards_weight {
+    max-width: 129px;
+}
+
+.line_height {
+    line-height: 140.625%;
+}
+
+/* table */
+
+.table_impuls {
+    background-color: var(--white);
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 80px;
+
+}
+
+.table_img {
+    max-width: 149px;
+}
+
+.table_impuls td {
+    text-align: center;
+    flex-basis: 50%;
+    padding: 35px 0;
+}
+
+.table_impuls tr:not(:last-child) {
+    border-bottom: 1px solid var(--part-gray);
+}
+
+.table_impuls td:not(:last-child) {
+    border-right: 1px solid var(--part-gray);
+}
+
+/* catagories */
+
+.line_height_catagories {
+    line-height: 28px;
+}
+
+.catagories {
+    width: 255px;
+    min-height: 253px;
+}
+
+.title_catagories {
+    max-width: 100px;
+}
+
+.icons_media {
+    background-image: url(./Images/Ellipse.png);
+    stroke-width: 2px;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    padding: 12px;
+}
+
+.padding_footer {
+    padding: 60px 0px;
+}
+
+.last_section {
+    background-color: var(--part-gray);
+    padding: 25px 0px;
+}
+
+.pre_last {
+    padding: 38px 0px;
 }
