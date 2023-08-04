@@ -308,15 +308,23 @@ hr {
 }
 
 .card_width {
-    min-width: 540px;
+    width: 540px;
+}
+
+.cards_double {
+    max-width: 100%;;
 }
 
 .column_interect {
     padding: 35px 0 35px 40px;
     flex-direction: column;
     gap: 25px;
+    width: 100%;
 }
 
+.width {
+    width: 100%;
+}
 .txt_cards_weight {
     max-width: 129px;
 }
@@ -337,6 +345,8 @@ hr {
 
 .table_img {
     max-width: 149px;
+    width: 100%;
+    padding: 0px 10px;
 }
 
 .table_impuls td {
@@ -368,6 +378,10 @@ hr {
     max-width: 100px;
 }
 
+.social_media {
+    padding-left: 15px;
+}
+
 .icons_media {
     background-image: url(./Images/Ellipse.png);
     stroke-width: 2px;
@@ -378,7 +392,7 @@ hr {
 }
 
 .padding_footer {
-    padding: 60px 0px;
+    padding: 60px 0px 0px 15px;
 }
 
 .last_section {
